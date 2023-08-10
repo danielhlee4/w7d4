@@ -1,6 +1,12 @@
 @use '../variables' as *;
 
 .main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-style: hidden hidden solid hidden;
+  border-width: 1px;
+  border-color: lightgrey;
   
 }
 
@@ -12,6 +18,9 @@
 .left-nav {
 
   > ul {
+    width: 175px;
+    display: flex;
+    justify-content: space-between;
     > li {
       
     }
@@ -24,6 +33,10 @@
 
 .right-nav  {
   > ul {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     > li {
       
     }
@@ -35,6 +48,18 @@
   
   i {
     
+  }
+
+  button {
+    background-color: rgb(53, 111, 196);
+    color: white;
+    font-weight: 400;
+    border-radius: 4px;
+  }
+
+  button:hover {
+    border-color: darkblue;
+    background-color: darkblue;
   }
 }
 
